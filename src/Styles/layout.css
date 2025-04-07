@@ -1,0 +1,41 @@
+.jornada {
+    
+    width: 50%;
+    display: grid;
+    /* justify-content: center; */
+    position: relative;
+    left: 25%;
+    border: 5px solid black; 
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bolder;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+    background-color: lightslategray;
+}
+
+.partido{
+    border: 5px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content:space-around;
+    background-color: lightgray;
+}
+.bandera-local { 
+    
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+
+}
+
+.bandera-visitante {
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+}
