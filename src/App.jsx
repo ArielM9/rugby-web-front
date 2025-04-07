@@ -1,33 +1,27 @@
-import React from "react";
-import Header from "./components/Header";
-import HeroSection from "./components/Sidebar";
-import Features from "./components/Layout";
-import Footer from "./components/Footer";
-import "./index.css";
-import Calendario from "./components/Calendario";
-import  Derecha from "./components/Derecha";
-import Layout from "./components/Layout";
-import Sidebar from "./components/Sidebar";
-import Carrousel from "./components/Carrousel";
+// src/App.jsx
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
+import Home from './pages/Home'
+import Noticias from './pages/Noticias'
+import Perfil from './pages/Perfil'
+import EquiposYLigas from './pages/EquiposYLigas'
 
-const App = () => {
+function App() {
+  // const[Login, setLogin] = useState(false)
+
+
   return (
-    <>
-      <Header />
-      <Sidebar />
-      <div className="app">
-        
-            
-          <Carrousel />
-                   
-          <Layout />
-        
-        
-        
-        {/* Sidebar derecho vacío */}
-        <Derecha />
-      </div>
-    </>
-  );
-};
-export default App;
+    <div>
+      <Header className="header"/>
+      <Routes>
+        <Route path="/" element={<Home className="home" />} />
+        <Route path="/noticias" element={<Noticias />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/datos" element={<EquiposYLigas />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App

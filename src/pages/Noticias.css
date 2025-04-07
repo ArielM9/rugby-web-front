@@ -1,0 +1,19 @@
+.noticias-container h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.noticias-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 30px;
+}
+
+

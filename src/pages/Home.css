@@ -1,0 +1,280 @@
+.carrusel-container {
+  width: 70%;
+  height: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #a4a3a3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+.carrusel-titulo {
+  font-size: 24px;
+  margin-bottom: -10px;
+  margin-top: 0px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.nav-semanas {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.button-ver-mas {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-ver-mas:hover {
+  background-color: #3e8e41;
+}
+
+.button-ver-mas:active {
+  transform: translateY(2px);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-semanas__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-semanas__header button{
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.nav-semanas__header h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-semanas__semana{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.nav-semanas__fechas{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.jornada{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.partido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: default; 
+  border: 5px solid #616060;
+}
+
+.partido:hover {
+  cursor: pointer;
+}
+
+.partido.clickeable {
+  cursor: pointer;
+  pointer-events: auto; /* Permite que el elemento sea clickeable */
+}
+
+.partido.no-clickeable {
+  cursor: default;
+  pointer-events: none; /* Evita que el elemento sea clickeable */
+}
+  
+  .partido__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .partido__fecha {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .partido__hora {
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: -50px;
+    font-size: 24px;
+    font-weight:bolder;
+    
+  }
+  
+ .partido__equipos {
+   display: inline-flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 24px;
+   font-weight:bolder;
+
+ }
+
+ .partido__equipos .imagen-contenedor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace el borde circular */
+    overflow: hidden; /* Recorta el contenido fuera del círculo */
+    border: 2px solid #a4a3a3; /* Define el borde visible */
+    display: flex; /* Asegura el ajuste del contenido */
+    justify-content: center; /* Opcional: centra la imagen horizontalmente */
+    align-items: center;
+    margin: 0 20px; /* Opcional: centra la imagen verticalmente */
+}
+
+ .partido__equipos img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin: 0 20px;
+   border-color: #a4a3a3;
+   border-style: solid;
+   object-fit: cover;
+ }
+
+ .partido__local {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+ }
+
+
+ 
+ .partido__visitante {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+  
+  .partido__liga {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .partido__liga span{
+    font-weight: bold;
+  }
+
+  .ver-mas-button{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Media queries para pantallas pequeñas */
+  
+  @media (max-width: 768px) {
+    .carrusel-container {
+      display: none;
+    }
+    .nav-semanas {
+      width: 90%;
+    }
+    .partido {
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    .partido__info {
+      width: 99%;
+    }
+    .partido__fecha {
+      font-size: 16px;
+    }
+    .partido__hora {
+      font-size: 18px;
+    }
+    .partido__equipos {
+      font-size: 18px;
+    }
+    .ver-mas-button {
+      padding: 5px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carrusel-container {
+      display: none;
+    }
+    .nav-semanas {
+      width: 100%;
+    }
+    .partido {
+      padding: 2px;
+      margin-bottom: 2px;
+    }
+    .partido__info {
+      width: 99%;
+    }
+    .partido__fecha {
+      font-size: 12px;
+    }
+    .partido__hora {
+      font-size: 14px;
+    }
+    .partido__equipos {
+      font-size: 14px;
+    }
+    .ver-mas-button {
+      padding: 2px 5px;
+    }
+  }
+  
+  

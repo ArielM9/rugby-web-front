@@ -1,0 +1,20 @@
+/* /src/pages/Noticias.css */
+.noticias-container {
+    padding: 20px;
+    overflow-x: hidden; /* Evitar desplazamiento lateral */
+  }
+  
+  .noticias-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* 3 columnas ajustables */
+    gap: 20px;
+    padding: 0; /* Sin padding horizontal */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  

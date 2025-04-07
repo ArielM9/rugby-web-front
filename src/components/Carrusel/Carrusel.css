@@ -1,0 +1,50 @@
+/* Centrar el carrusel y ajustar su tamaño */
+.carrusel-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh; /* Centrado vertical */
+    background-color: #f9f9f9; /* Fondo claro opcional */
+    
+  }
+ 
+  /* Ajustar el ancho máximo del carrusel */
+  .carrusel {
+    max-width: 72%; /* Ajusta el ancho del carrusel (puedes cambiar al 60%, etc.) */
+    margin: 0 auto; /* Asegura que esté centrado horizontalmente */
+    padding: 1rem; /* Espaciado general */
+    padding-left: 1.5rem; /* Aumenta el margen izquierdo del carrusel */
+    overflow: visible;
+  }
+
+  .slick-slide {
+    display: flex; /* Asegura que los elementos dentro de cada slide se distribuyan bien */
+    justify-content: center;
+  }
+  
+  
+  /* Personalización de los puntos del carrusel */
+  .slick-dots li button:before {
+    color: #007bff; /* Color de los puntos */
+    font-size: 0.50rem; /* Tamaño de los puntos */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #0056b3; /* Color de los puntos activos */
+  }
+  
+  /* Personalización de las flechas del carrusel */
+  .slick-prev:before,
+  .slick-next:before {
+    color: #333; /* Color de las flechas */
+    font-size: 1.5rem; /* Tamaño de las flechas */
+  }
+  
+  .slick-prev {
+    left: -30px; /* Ajusta la posición horizontal de la flecha izquierda */
+  }
+  
+  .slick-next {
+    right: -30px; /* Ajusta la posición horizontal de la flecha derecha */
+  }
+  
